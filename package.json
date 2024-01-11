@@ -1,0 +1,69 @@
+{
+  "name": "deel-task",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "body-parser": "^1.19.0",
+    "express": "4.17.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "sequelize": "^6.3.4",
+    "sqlite3": "^4.2.0",
+    "styled-components": "^6.1.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "client-start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"nodemon ./server-app/src/server.js\" \"npm run client-start\"",
+    "seed": "node ./server-app/scripts/seedDb.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-typescript": "^7.23.3",
+    "@jest/globals": "^29.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "babel-jest": "^29.7.0",
+    "concurrently": "4.1.0",
+    "eslint": "^8.56.0",
+    "nodemon": "1.19.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">=10.16.3"
+  },
+  "engineStrict": true,
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "💫 Welcome! 🎉",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

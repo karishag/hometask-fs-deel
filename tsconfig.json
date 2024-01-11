@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "incremental": true,
+    "module": "esnext",
+    "jsx": "react",
+    "removeComments": false,
+    "disableSizeLimit": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+    "lib": ["ESNext", "DOM"],
+
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+
+    "skipLibCheck": true,
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "."
+  },
+  "exclude": ["**/*.test.ts", "**/*.test.js"]
+}
